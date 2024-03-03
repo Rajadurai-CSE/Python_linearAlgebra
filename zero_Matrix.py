@@ -7,6 +7,8 @@ def zero_matrix_fun(rows,cols):
 
 rows = int(input("Enter Number of Rows: "))
 cols = int(input("Enter Number of Rows: "))
-Zero_Matrix = zero_matrix_fun(rows,cols)
-print(Zero_Matrix)
-
+if rows!=cols:
+  print("Error!! Enter a square matrix")
+else:
+  zero_matrix = zero_matrix_fun(rows,cols)
+  print(zero_matrix)
